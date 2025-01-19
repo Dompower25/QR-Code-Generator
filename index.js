@@ -9,9 +9,6 @@ app.get('/generate', async (req, res) => {
 
   //generate?url=https://youWebURL - generate QR code
 
-  console.log(req.query.url, ' URL req.query.url')
-  console.log(req.query, ' req.query')
-  console.log(req, ' req')
   if (!url) {
     return res.status(400).send('URL не указан.');
   }
